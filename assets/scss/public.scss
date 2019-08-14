@@ -1,0 +1,41 @@
+@import "filters/range";
+@import "filters/date-range";
+@import "filters/color-image";
+@import "filters/checkboxes";
+@import "filters/select";
+@import "filters/search";
+@import "filters/radio";
+@import "filters/active-filters";
+@import "filters/pagination";
+@import "filters/rating";
+
+.jet-filters-loading {
+	opacity: .6 !important;
+	pointer-events: none !important;
+}
+
+.apply-filters__button{
+	margin-top: 10px;
+}
+
+.jet-filter{
+	+ .jet-filter{
+		margin-top: 10px;
+	}
+}
+
+.apply-filters{
+	display: flex;
+	flex-direction: column;
+	.apply-filters__button{
+		align-self: flex-start;
+	}
+}
+
+.jet-remove-all-filters{
+	display: flex;
+	flex-direction: column;
+	.jet-remove-all-filters__button{
+		align-self: flex-start;
+	}
+}

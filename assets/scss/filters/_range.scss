@@ -1,0 +1,28 @@
+.jet-range {
+	&__slider {
+		background: #f9f9f9;
+		height: 10px;
+		border-radius: 5px;
+		position: relative;
+		.ui-slider-range {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			height: 100%;
+			background: #eee;
+		}
+		.ui-slider-handle {
+			position: absolute;
+			height: 16px;
+			width: 16px;
+			border-radius: 8px;
+			top: 50%;
+			margin: 0;
+			background: #ccc;
+			z-index: 2;
+			cursor: pointer;
+			outline: none;
+			transform: translate( -50%, -50% );
+		}
+	}
+}

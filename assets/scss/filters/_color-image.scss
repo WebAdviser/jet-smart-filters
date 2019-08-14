@@ -1,0 +1,43 @@
+.jet-color-image-list {
+	.jet-color-image-list__item {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+
+		input {
+			outline: 0;
+			visibility: hidden;
+			margin: 0;
+			float: left;
+			font-size: inherit;
+			width: 0;
+			height: 0;
+			display: none;
+
+			&:checked {
+				+ .jet-color-image-list__decorator > * {
+					border-color: #2ccc3c;
+				}
+			}
+		}
+
+		.jet-color-image-list__label {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.jet-color-image-list__decorator > * {
+			position: relative;
+			display: inline-block;
+			width: 30px;
+			border: 1px solid transparent;
+			border-radius: 3px;
+			vertical-align: middle;
+		}
+
+		.jet-color-image-list__image{
+			font-size: 0;
+		}
+
+	}
+}

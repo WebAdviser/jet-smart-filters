@@ -1,0 +1,87 @@
+.jet-smart-filters-color-image {
+	&.cx-ui-kit.cx-ui-repeater-container {
+		padding: 20px;
+	}
+
+	.cx-ui-repeater-add {
+		margin-top: 10px;
+	}
+
+	.cx-ui-repeater-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		.cx-ui-repeater-item {
+			box-sizing: border-box;
+			flex: 0 1 calc(33.333% - 20px);
+			margin: 10px;
+		}
+
+		.color-image-type-control {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+
+			label {
+				margin-bottom: 0;
+				margin-right: 10px;
+			}
+
+			.cx-ui-select-wrapper {
+				display: flex;
+				align-items: center;
+				width: 100%;
+			}
+
+			&.cx-control-hidden {
+				display: none;
+			}
+
+			&.color-control,
+			&.selected-value-control {
+				.cx-label {
+					margin-right: 7px;
+				}
+			}
+
+			&.image-control {
+				align-items: flex-start;
+
+				.cx-label {
+					margin-top: 10px;
+				}
+			}
+
+		}
+	}
+
+	&[data-source="posts"],
+	&[data-source="taxonomies"] {
+		.color-image-type-control.value-control {
+			display: none;
+		}
+	}
+
+	&[data-source="custom_fields"],
+	&[data-source="manual_input"] {
+		.color-image-type-control.selected-value-control {
+			display: none;
+		}
+	}
+
+	&[data-type="color"] {
+		.color-image-type-control.image-control {
+			display: none;
+		}
+	}
+
+	&[data-type="image"] {
+		.color-image-type-control.color-control {
+			display: none;
+		}
+	}
+
+}
